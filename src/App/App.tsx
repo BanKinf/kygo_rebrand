@@ -1,9 +1,13 @@
 import React from 'react'
+import Music from '../pages/Music'
+import Routes from '../Routes/App.routes'
 
 const App = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <div>
+        <Routes />
+      </div>
     </div>
   )
 }
