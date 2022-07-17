@@ -1,6 +1,10 @@
-import { extendTheme, theme } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
+import "@fontsource/roboto-condensed";
 
 export default extendTheme({
+    fonts: {
+        nav_font: "Roboto Condensed",
+    },
     colors: {
         primary: "#27C5B0",
     },

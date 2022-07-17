@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Image, Text } from '@chakra-ui/react'
+import { Image, Text } from '@chakra-ui/react'
 import "./navBar.css";
 import { Link, useLocation } from 'react-router-dom';
 
@@ -46,7 +46,9 @@ const NavBar = () => {
         <div className='nav__links'>
           {LINKS.map((link)=>(
             <Link key={link.href} to={link.href}>
-              <Text 
+              <Text
+                fontSize="lg"
+                fontFamily="nav_font"
                 color={pathname === link.href ? 'primary' : 'inherit'}
               >
                 {link.text}
