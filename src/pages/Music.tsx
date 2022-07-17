@@ -1,10 +1,9 @@
 import React from "react";
+import NavBar from "../components/NavBar/NavBar";
 
-interface Props {}
-
-const Music: React.FC<Props> = () => {
+const Music: React.FC = () => {
     return (
-        <div>{`Music`}</div>
+       <NavBar />
     );
 };
 
