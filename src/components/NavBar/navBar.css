@@ -19,6 +19,10 @@
     gap: 30px;
 }
 
+.nav__item:hover{
+    color: #a5ddd5;
+}
+
 .nav__buttons {
     display: flex;
     gap: 30px;

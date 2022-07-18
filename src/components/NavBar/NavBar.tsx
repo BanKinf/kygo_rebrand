@@ -41,12 +41,15 @@ const NavBar = () => {
   return (
     <nav className='nav__container'>
         <div className='nav__logo'>
+          <Link to='/'>
             <Image src='src/assets/images/logo.png' alt='logo' />
+          </Link>
         </div>
         <div className='nav__links'>
           {LINKS.map((link)=>(
             <Link key={link.href} to={link.href}>
               <Text
+                className='nav__item'
                 fontSize="lg"
                 fontFamily="nav_font"
                 color={pathname === link.href ? 'primary' : 'inherit'}
@@ -57,8 +60,8 @@ const NavBar = () => {
           ))}
         </div>
         <div className='nav__buttons'>
-            <button className='button__nav'>PALM TREE CREW</button>
-            <button className='button__nav'>X BY KYGO</button>
+            <a className='button__nav' href='https://palmtreecrew.com/' target="_blank">PALM TREE CREW</a>
+            <a className='button__nav' href='https://xbykygo.com/?utm_medium=kygo-share&utm_source=google&utm_campaign=always-on&utm_content=kygomusic' target="_blank">X BY KYGO</a>
         </div>
     </nav>
   )

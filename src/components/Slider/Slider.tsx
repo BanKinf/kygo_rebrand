@@ -19,32 +19,36 @@ const imgLink: SliderImg[] = [
     },
     {
         href: '/videos',
-        img: 'src/assets/images/sliderImg/sliderMusic.jpg',
+        img: 'src/assets/images/sliderImg/sliderVideos.jpg',
     },
     {
         href: '/news',
-        img: 'src/assets/images/sliderImg/sliderMusic.jpg',
+        img: 'src/assets/images/sliderImg/sliderNews.jpg',
     },
     {
         href: '/social',
-        img: 'src/assets/images/sliderImg/sliderMusic.jpg',
+        img: 'src/assets/images/sliderImg/sliderSocial.jpg',
     },
     {
         href: '/biography',
-        img: 'src/assets/images/sliderImg/sliderMusic.jpg',
+        img: 'src/assets/images/sliderImg/sliderBiography.jpg',
     },
 ]
 
 const Slider = () => {
     const {pathname} = useLocation()
 
-  return (
-    <header className='slider__container'>
-        <div className="slider__image">
-            <Image src="src/assets/images/sliderImg/sliderMusic.jpg" alt='sliderImg' />
+    const Element = imgLink.filter(
+        element => pathname === element.href)
+    
+    console.log(Element)
+    return (
+        <div className='slider__container'>
+            <div className='slider__image'>
+                <Image src={Element[0].img} alt='sliderImg' />
+            </div>
         </div>
-    </header>
-  )
+    )
 }
 
 export default Slider

@@ -7,8 +7,8 @@ interface Props {}
 const TourDates: React.FC<Props> = () => {
     return (
         <>
-            <NavBar />
-            <Slider />
+         <NavBar />
+         <Slider />
         </>
     );
 };
