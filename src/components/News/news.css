@@ -1,0 +1,38 @@
+.cards__container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.card__img {
+    width: 300px;
+}
+
+.card__date {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card__description {
+    /* border: red 2px solid; */
+    width: 240px;
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.card__subDescription{
+    /* border: green 2px solid; */
+    width: 300px;
+}
+
+.card__button {
+    border: 3px solid;
+    padding: 8px 20px 8px 20px;
+}
+
+.card_button__container {
+    display: flex;
+    margin-top: 25px;
+}

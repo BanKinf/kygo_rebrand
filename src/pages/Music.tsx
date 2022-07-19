@@ -5,6 +5,7 @@ import "./css/music.css";
 // Import Components
 import NavBar from "../components/NavBar/NavBar";
 import Slider from "../components/Slider/Slider";
+import News from "../components/News/News";
 
 const Music: React.FC = () => {
     return (
@@ -12,8 +13,12 @@ const Music: React.FC = () => {
          <NavBar />
          <Slider />
          <div className="news__container">
-            <Text fontFamily="text_font" color="text_color" className="news__text">LATEST NEWS</Text>
+            <Text fontFamily="text_font" color="text_color" className="news__text">
+                LATEST NEWS
+            </Text>
+            <News />
         </div>
+        
         </>
     );
 };
