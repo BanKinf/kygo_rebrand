@@ -17,8 +17,12 @@ const Music: React.FC = () => {
                 LATEST NEWS
             </Text>
             <News />
-        </div>
-        
+         </div>
+         <div className="music__container">
+            <Text fontFamily="text_font" color="text_color" className="music__text">
+                MUSIC
+            </Text>
+         </div>
         </>
     );
 };
