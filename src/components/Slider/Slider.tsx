@@ -41,7 +41,6 @@ const Slider = () => {
     const Element = imgLink.filter(
         element => pathname === element.href)
     
-    console.log(Element)
     return (
         <div className='slider__container'>
             <div className='slider__image'>
