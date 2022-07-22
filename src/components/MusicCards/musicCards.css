@@ -8,7 +8,7 @@
 .music__cards {
     align-items: center;
     display: flex;
-    gap: 30px;
+    gap: 43px;
 }
 
 .music__card__img {
@@ -52,12 +52,6 @@
 }
 
 .music__card__media {
-    display: flex;
     justify-content: center;
     margin-top: 10px;
-}
-
-.pause__svg {
-    height: 30px;
-    width: 30px;
 }

@@ -1,6 +1,5 @@
-import { Box, Image } from '@chakra-ui/react';
-import { play, pause} from './controlsMusic.js';
-import React from 'react'
+import { Box, Image, Progress } from '@chakra-ui/react';
+import  ControlMusic from  './ControlsMusic';
 import './musicCards.css'
 
 interface MusicData {
@@ -30,13 +29,12 @@ const MUSIC: MusicData[] = [
     img: 'src/assets/images/musicImg/music-3.png',
     title: 'Dancing Feet',
     author: 'Kygo, DNCE',
-    media: 'src/assets/music/music-1.mp3',
+    media: 'src/assets/music/music-3.mp3',
     mediaHref: 'https://open.spotify.com/track/4RAR8g8fZNB106ezUurnE0?go=1&sp_cid=f33d530e69b8f39856bfb2f4cfe33ec5&utm_source=embed_player_m&utm_medium=desktop&nd=1',
   }
 ]
 
 const Music = () => {
-
   return (
     <div className='music__cards__container'>
       <div className='music__cards'>
@@ -60,25 +58,12 @@ const Music = () => {
                 </Box>
             </div>
           </div>
-            <Box className='music__card__media'>
-              <audio id="player_music" className='player__buttons'>
-                <source src={music.media} type="audio/mp3" />
-              </audio>
-              <div className='controlPanel__Buttons' >
-                <button className='play__button' onClick={play}>
-                  <Image className='play__svg' src="src/assets/svg/play.svg" alt='play'/>
-                </button>
-                <button className='pause__button' onClick={pause}>
-                  <Image className='pause__svg' src="src/assets/svg/pause.svg" alt='pause'/>
-                </button>
-              </div>
-            </Box>
-          </div>
+          <ControlMusic />
+        </div>        
         ))}
       </div>
     </div>
-  )
-  
+  ) 
 }
 
 export default Music

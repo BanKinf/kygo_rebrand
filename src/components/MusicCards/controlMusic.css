@@ -1,0 +1,41 @@
+.controlMusic__svg {
+    height: 28px;
+    width: 28px;
+}
+
+.controlMusic__button__container {
+    margin-top: 15px;
+    margin-left: 22px;
+}
+
+.controlMusic__container {
+    display: flex;
+    align-items: center;
+}
+
+.controlMusic__time {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.progress__bar {
+    width: 60%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.progress__bar {
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+.progress__bar::-webkit-progress-bar {
+    background-color: rgb(201, 198, 198);
+    border-radius: 5px;
+}
+
+.progress__bar::-webkit-progress-value {
+    background-color: white;
+    border-radius: 5px;
+} 
