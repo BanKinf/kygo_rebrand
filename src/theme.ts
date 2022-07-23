@@ -2,12 +2,16 @@ import { extendTheme } from "@chakra-ui/react";
 import "@fontsource/roboto-condensed";
 import "@fontsource/oswald";
 import "@fontsource/roboto";
-import "@fontsource/noto-sans-malayalam"
+import "@fontsource/noto-sans-malayalam";
+import "@fontsource/raleway";
+import "@fontsource/barlow";
 
 export default extendTheme({
     fonts: {
         nav_font: "Roboto Condensed",
         text_font: "Oswald",
+        Innertext_font: "Raleway",
+        scroll_font: "Barlow",
         card_font: "Roboto",
         music_card_font: '"Noto Sans Malayalam", sans-serif'
     },

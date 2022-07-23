@@ -8,6 +8,7 @@ interface MusicData {
   author: string;
   media: string;
   mediaHref: string;
+  mediaTime: string;
 }
 
 const MUSIC: MusicData[] = [
@@ -17,6 +18,7 @@ const MUSIC: MusicData[] = [
     author: 'Kygo, Dean Lewis',
     media: 'src/assets/music/music-1.mp3',
     mediaHref: 'https://open.spotify.com/track/1O73ZKgl0THUImkHW6dfAL?go=1&sp_cid=f33d530e69b8f39856bfb2f4cfe33ec5&utm_source=embed_player_m&utm_medium=desktop&nd=1',
+    mediaTime: '03:21'
   },
   {
     img: 'src/assets/images/musicImg/music-2.png',
@@ -24,6 +26,7 @@ const MUSIC: MusicData[] = [
     author: 'Kygo',
     media: 'src/assets/music/music-2.mp3',
     mediaHref: 'https://open.spotify.com/track/4X66U6SUjvZqiKYIpCWXnq?go=1&sp_cid=f33d530e69b8f39856bfb2f4cfe33ec5&utm_source=embed_player_m&utm_medium=desktop&nd=1',
+    mediaTime: '08:08'
   },
   {
     img: 'src/assets/images/musicImg/music-3.png',
@@ -31,6 +34,7 @@ const MUSIC: MusicData[] = [
     author: 'Kygo, DNCE',
     media: 'src/assets/music/music-3.mp3',
     mediaHref: 'https://open.spotify.com/track/4RAR8g8fZNB106ezUurnE0?go=1&sp_cid=f33d530e69b8f39856bfb2f4cfe33ec5&utm_source=embed_player_m&utm_medium=desktop&nd=1',
+    mediaTime: '03:46'
   }
 ]
 
@@ -58,7 +62,7 @@ const Music = () => {
                 </Box>
             </div>
           </div>
-          <ControlMusic />
+          {ControlMusic(music.media, music.mediaTime)}
         </div>        
         ))}
       </div>

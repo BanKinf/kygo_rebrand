@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect} from 'react'
 import {Box, Image, Text} from '@chakra-ui/react'
 import './controlMusic.css'
 
-const ControlsMusic = () => {
+const ControlsMusic = (media: string, mediatime: string) => {
     //state
     const [isPlaying, setIsPlaying] = useState(false)
     const [duration, setDuration] = useState(0)
@@ -11,18 +11,13 @@ const ControlsMusic = () => {
 
     //refereces
     const audioPlayer = useRef() as React.RefObject<HTMLAudioElement>;
+    const progressBar = useRef() as React.RefObject<HTMLProgressElement>;
 
     //effects
-    useEffect(() => {
-        if (!audioPlayer.current) return
-        const seconds = Math.floor(audioPlayer.current.duration);
-        setDuration(seconds);
-    }, [audioPlayer?.current?.onloadedmetadata, audioPlayer?.current?.readyState]);
 
     useEffect(() => {
         if (!audioPlayer.current) return
         audioPlayer.current.addEventListener('timeupdate', handleProgress);
-        setCurrentTime(audioPlayer.current.currentTime);
     }
     , [])
 
@@ -41,6 +36,7 @@ const ControlsMusic = () => {
     const handleProgress = () => {
         if (!audioPlayer.current) return
         setProgress(audioPlayer.current.currentTime / audioPlayer.current.duration * 100);
+        setCurrentTime(audioPlayer.current.currentTime);
     }
 
     const calculateTime = (secs: number) => {
@@ -53,7 +49,7 @@ const ControlsMusic = () => {
  
   return (
     <div className='controlMusic__container'>
-        <audio ref={audioPlayer} src='src/assets/music/music-3.mp3'></audio>
+        <audio ref={audioPlayer} src={media}></audio>
         <button className='controlMusic__button__container' onClick={togglePlayPause}>
             {isPlaying ? 
             <Image
@@ -70,7 +66,7 @@ const ControlsMusic = () => {
 
         {/* Progress Bar */}
         <progress
-            id='progressBar'
+            ref={progressBar}
             className='progress__bar'
             value={progress}
             max={100}
@@ -85,7 +81,7 @@ const ControlsMusic = () => {
             color="white" 
             fontSize="12px"
         >
-        {calculateTime(duration)} / {calculateTime(currentTime)}
+        {mediatime} / {calculateTime(currentTime)}
         </Text>
 
     </div>
