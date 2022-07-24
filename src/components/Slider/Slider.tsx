@@ -44,7 +44,7 @@ const Slider = () => {
     return (
         <div className='slider__container'>
             <div className='slider__image'>
-                <Image src={Element[0].img} alt='sliderImg' />
+                <Image src={Element[0].img} alt='sliderImg'/>
             </div>
         </div>
     )

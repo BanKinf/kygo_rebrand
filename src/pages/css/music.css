@@ -1,17 +1,17 @@
 .news__text {
     font-style: normal;
     font-weight: 200;
-    font-size: 32px;
+    font-size: 40px;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
 .music__text {
     font-style: normal;
-    font-size: 32px;
+    font-size: 40px;
     text-align: center;
-    margin-top: 85px;
+    margin-top: 107px;
     margin-bottom: 30px;
     padding-right: 20px;
 }
