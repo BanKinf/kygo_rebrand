@@ -83,7 +83,7 @@ const ControlsMusic = (media: string, mediatime: string) => {
         >
         {mediatime} / {calculateTime(currentTime)}
         </Text>
-
+        
     </div>
   )
 }

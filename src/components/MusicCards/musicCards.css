@@ -47,6 +47,10 @@
     width: 27px;
 }
 
+.spotify__svg::selection{
+    background: none;
+}
+
 .music__card__Subcontent{
     display: flex;
 }

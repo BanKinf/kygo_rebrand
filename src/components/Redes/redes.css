@@ -1,0 +1,24 @@
+.redes__container {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.redes__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.redes__icon:hover {
+    transform: scale(1.05);
+}
+
+.redes__circles {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 24px;
+}

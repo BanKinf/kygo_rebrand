@@ -7,6 +7,7 @@ import NavBar from "../components/NavBar/NavBar";
 import Slider from "../components/Slider/Slider";
 import News from "../components/News/News";
 import MusicCards from "../components/MusicCards/MusicCards";
+import Redes from "../components/Redes/Redes";
 
 const Music: React.FC = () => {
     return (
@@ -24,6 +25,7 @@ const Music: React.FC = () => {
                 MUSIC
             </Text>
             <MusicCards />
+            <Redes />
          </div>
         </>
     );

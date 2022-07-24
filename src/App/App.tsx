@@ -1,5 +1,4 @@
 import React from 'react'
-import Music from '../pages/Music'
 import Routes from '../Routes/App.routes'
 
 const App = () => {

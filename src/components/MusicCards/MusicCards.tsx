@@ -1,4 +1,5 @@
 import { Box, Image, Progress } from '@chakra-ui/react';
+import Redes from '../Redes/Redes';
 import  ControlMusic from  './ControlsMusic';
 import './musicCards.css'
 
@@ -58,9 +59,10 @@ const Music = () => {
                 </Box>
               </div>
               <Box className='music__card__spotify'>
-                  <a href={music.mediaHref}><Image className='spotify__svg' src="src/assets/svg/spotyLogo.svg" alt='spotifyLogo'/></a>
+                  <a href={music.mediaHref} target='_blank'><Image className='spotify__svg' src="src/assets/svg/spotyLogo.svg" alt='spotifyLogo'/></a>
                 </Box>
             </div>
+            
           </div>
           {ControlMusic(music.media, music.mediaTime)}
         </div>        
@@ -68,6 +70,7 @@ const Music = () => {
       </div>
     </div>
   ) 
+  
 }
 
 export default Music

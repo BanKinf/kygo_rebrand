@@ -3,6 +3,10 @@
     width: 28px;
 }
 
+.controlMusic__svg::selection {
+    background: none;
+}
+
 .controlMusic__button__container {
     margin-top: 15px;
     margin-left: 22px;
