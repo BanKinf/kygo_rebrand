@@ -1,4 +1,4 @@
-import { Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 import "./css/music.css";
 
@@ -8,6 +8,8 @@ import Slider from "../components/Slider/Slider";
 import News from "../components/News/News";
 import MusicCards from "../components/MusicCards/MusicCards";
 import Redes from "../components/Redes/Redes";
+import SliderMusicCards from "../components/SliderMusicCards/SliderMusicCards";
+import Footer from "../components/Footer/Footer";
 
 const Music: React.FC = () => {
     return (
@@ -24,8 +26,10 @@ const Music: React.FC = () => {
             <Text fontFamily="scroll_font" color="text_color" className="music__text" fontWeight="light">
                 MUSIC
             </Text>
-            <MusicCards />
+                {/* segun la resoulcion */}
+                { screen.width < 800 ? <SliderMusicCards /> : <MusicCards /> }
             <Redes />
+            <Footer />
          </div>
         </>
     );
