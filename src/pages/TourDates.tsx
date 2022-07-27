@@ -1,4 +1,6 @@
 import React from "react";
+import Events from "../components/Events/Events";
+import Footer from "../components/Footer/Footer";
 import NavBar from "../components/NavBar/NavBar";
 import Slider from "../components/Slider/Slider";
 
@@ -9,6 +11,8 @@ const TourDates: React.FC<Props> = () => {
         <>
          <NavBar />
          <Slider />
+         <Events />
+         <Footer />
         </>
     );
 };
