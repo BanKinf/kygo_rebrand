@@ -1,5 +1,6 @@
 import { Box, List, ListItem, Text } from '@chakra-ui/react';
 import React, { useEffect } from 'react'
+import './events.css'
 
 const Events = () => {
     //States
@@ -20,24 +21,12 @@ const Events = () => {
                         button_href: event.button_href,
                     }
                 })
-                setEvents(events)
+            setEvents(events)
     })},[])
 
   return (
-    <Box>
-        <Text>Events</Text>
-        <List>
-            {events.map((event: { month: any; day: any; event: any; location: any; button_text: any; button_href: any; }) => {
-                return (
-                    <ListItem key={event.month + event.day}>
-                        <br />
-                        <h2>{event.month} {event.day}</h2>
-                        <p>{event.event}</p>
-                        <p>{event.location}</p>
-                        <a href={event.button_href}>{event.button_text}</a>
-                    </ListItem>
-                )})}
-        </List>
+    <Box className="events-container">
+        
     </Box>
   )
 }

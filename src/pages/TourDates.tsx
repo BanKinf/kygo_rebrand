@@ -1,4 +1,7 @@
+import { Box, Text } from "@chakra-ui/react";
 import React from "react";
+
+// Import Components
 import Events from "../components/Events/Events";
 import Footer from "../components/Footer/Footer";
 import NavBar from "../components/NavBar/NavBar";
@@ -11,6 +14,7 @@ const TourDates: React.FC<Props> = () => {
         <>
          <NavBar />
          <Slider />
+         <Text className='events__title'>SEE KYGO LIVE</Text>
          <Events />
          <Footer />
         </>

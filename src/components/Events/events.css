@@ -1,0 +1,21 @@
+.items__Container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.monthDayItem {
+    border: red 1px solid;
+}
+
+.eventItem {
+    border: blue 1px solid;
+}
+
+.locationItem {
+    border: green 1px solid;
+}
+
+.buttonItem {
+    border: orangered 1px solid;
+}

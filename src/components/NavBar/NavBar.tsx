@@ -50,7 +50,7 @@ const NavBar = () => {
             <Link key={link.href} to={link.href}>
               <Text
                 className='nav__item'
-                fontSize="lg"
+                fontSize={15}
                 fontFamily="nav_font"
                 color={pathname === link.href ? 'primary' : 'inherit'}
               >
