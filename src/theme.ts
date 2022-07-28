@@ -32,6 +32,8 @@ export default extendTheme({
             "html, body": {
                 backgroundColor: "white",
             },
+            "table": {
+            }
         })
     }
 })

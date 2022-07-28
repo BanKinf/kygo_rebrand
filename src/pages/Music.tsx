@@ -17,13 +17,13 @@ const Music: React.FC = () => {
          <NavBar />
          <Slider />
          <div className="news__container">
-            <Text fontFamily="scroll_font" color="text_color" className="news__text">
+            <Text fontFamily="scroll_font" color="text_color" className="texts">
                 LATEST NEWS
             </Text>
             <News />
          </div>
          <div className="music__container">
-            <Text fontFamily="scroll_font" color="text_color" className="music__text" fontWeight="light">
+            <Text fontFamily="scroll_font" color="text_color" className="texts" fontWeight="light">
                 MUSIC
             </Text>
                 {/* segun la resoulcion */}

@@ -14,8 +14,12 @@ const TourDates: React.FC<Props> = () => {
         <>
          <NavBar />
          <Slider />
-         <Text className='events__title'>SEE KYGO LIVE</Text>
-         <Events />
+         <div className="tourdates__container">
+            <Text fontFamily="scroll_font" color="text_color" className="texts">
+                SEE KYGO LIVE
+            </Text>
+            <Events />
+         </div>
          <Footer />
         </>
     );
