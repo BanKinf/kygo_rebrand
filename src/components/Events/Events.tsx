@@ -52,11 +52,16 @@ const Events = () => {
                             button_href: any; 
                         }) => {
 
+                            const eventSplit = event.event.split(': ')
+                            const eventNamePart1 = eventSplit[0]
+                            const eventNamePart2 = eventSplit[1]
+
                             const Button = () => {
                                 if (event.button_href === undefined) {
                                     return <Image 
                                         src="src/assets/svg/notButton.svg"
                                         alt="NotButton"
+                                        className='ButtonTickets'
                                     />
                                 } else {
                                     if (event.button_text === "Tickets") {
@@ -66,6 +71,7 @@ const Events = () => {
                                             onClick={() => {
                                                 window.open(event.button_href, '_blank')
                                             }}
+                                            className='ButtonTickets'
                                             _hover={
                                                 { cursor: 'pointer' }
                                             }
@@ -77,6 +83,7 @@ const Events = () => {
                                             onClick={() => {
                                                 window.open(event.button_href, '_blank')
                                             }}
+                                            className='ButtonTickets'
                                             _hover={
                                                 { cursor: 'pointer' }
                                             }
@@ -99,7 +106,8 @@ const Events = () => {
                                         </Box>
                                     </Th>
                                     <Th>
-                                        <Text className='eventEvent'>{event.event}</Text>
+                                        <Text className='eventEvent'>{eventNamePart1}</Text>
+                                        <Text className='eventEvent'>{eventNamePart2}</Text>
                                     </Th>
                                     <Th>
                                         <Text className='eventLocation'>{event.location}</Text>

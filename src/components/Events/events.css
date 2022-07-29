@@ -46,6 +46,7 @@
 
 .eventEvent {
     font-family: 'Roboto Condensed', sans-serif;
+    line-height: 22px;
     color: #000000;
     font-size: 18px;
 }
@@ -56,3 +57,15 @@
     font-size: 18px;
     margin-right: 80px;
 }
+
+.seeMore__button {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.ButtonTickets {
+    width: 160px;
+}
+
