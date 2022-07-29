@@ -37,6 +37,11 @@ const ControlsMusic = (media: string, mediatime: string) => {
         if (!audioPlayer.current) return
         setProgress(audioPlayer.current.currentTime / audioPlayer.current.duration * 100);
         setCurrentTime(audioPlayer.current.currentTime);
+        if (audioPlayer.current.ended === true) {
+            setIsPlaying(false);
+            setCurrentTime(0);
+            setProgress(0);
+        }
     }
 
     const calculateTime = (secs: number) => {

@@ -1,6 +1,6 @@
 .controlMusic__svg {
-    height: 28px;
-    width: 28px;
+    height: 23px;
+    width: 23px;
 }
 
 .controlMusic__svg::selection {
@@ -13,6 +13,7 @@
 }
 
 .controlMusic__container {
+    margin-top: 6px;
     display: flex;
     align-items: center;
 }
@@ -23,7 +24,7 @@
 }
 
 .progress__bar {
-    width: 54%;
+    width: 45%;
     height: 5px;
     border-radius: 5px;
     background-color: white;
