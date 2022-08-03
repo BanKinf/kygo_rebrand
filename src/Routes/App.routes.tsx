@@ -13,13 +13,13 @@ import Videos from "../pages/Videos";
 const AppRoutes: React.FC = () => {
     return (
         <Routes>
-            <Route element={<Music />} path="/" />
-            <Route element={<TourDates />} path="/tour-dates" />
-            <Route element={<Videos />} path="/videos" />
-            <Route element={<News />} path="/news" />
-            <Route element={<Social />} path="/social" />
-            <Route element={<Biography />} path="/biography" />
-            <Route path="*" element={<Error/>} />
+         <Route element={<Music />} path="/" />
+         <Route element={<TourDates />} path="/tour-dates" />
+         <Route element={<Videos />} path="/videos" />
+         <Route element={<News />} path="/news" />
+         <Route element={<Social />} path="/social" />
+         <Route element={<Biography />} path="/biography" />
+         <Route path="*" element={<Error/>} />
         </Routes>
     )
 }
